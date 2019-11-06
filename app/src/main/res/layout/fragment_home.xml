@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ttbar"
+        layout="@layout/layout_toolbar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/ttbar"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_margin="4dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crd_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.github.florent37.shapeofview.shapes.ArcView
+                    android:id="@+id/sshape"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:elevation="4dp"
+                    app:shape_arc_cropDirection="outside"
+                    app:shape_arc_height="27pt"
+                    app:shape_arc_position="bottom">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/bck_app"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NORMAL"
+                            android:textSize="15pt"
+                            style="@style/cursive_tx"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="8dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="QUIZ"
+                            android:textSize="15pt"
+                            style="@style/cursive_tx"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+
+
+                    </LinearLayout>
+            </com.github.florent37.shapeofview.shapes.ArcView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Normal Quiz "
+                    style="@style/bold_tx"
+                    android:textColor="@color/black"
+                    android:textSize="8pt"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="158k People Played"
+                    android:textColor="@color/black"
+                    android:textSize="7pt"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_gaming"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="textStart"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crd_zara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <com.github.florent37.shapeofview.shapes.ArcView
+                android:id="@+id/sshape1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:elevation="4dp"
+                app:shape_arc_cropDirection="outside"
+                app:shape_arc_height="27pt"
+                app:shape_arc_position="bottom">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bck_app"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ZARA"
+                        android:textSize="15pt"
+                        style="@style/cursive_tx"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HATKE"
+                        android:textSize="15pt"
+                        style="@style/cursive_tx"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/white"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QUIZ"
+                        android:textSize="15pt"
+                        style="@style/cursive_tx"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/white"/>
+
+
+                </LinearLayout>
+            </com.github.florent37.shapeofview.shapes.ArcView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Zara Hatke Quiz "
+                    style="@style/bold_tx"
+                    android:textColor="@color/black"
+                    android:textSize="8pt"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="At 6:00 PM"
+                    android:textColor="@color/black"
+                    android:textSize="7pt"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_gaming"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crdlast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_below="@+id/linear1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <com.github.florent37.shapeofview.shapes.ArcView
+            android:id="@+id/sshape2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:elevation="4dp"
+            app:shape_arc_cropDirection="outside"
+            app:shape_arc_height="27pt"
+            app:shape_arc_position="bottom">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/quiz3"/>
+
+        </com.github.florent37.shapeofview.shapes.ArcView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Q U I Z  T I M E"
+                style="@style/cursive_tx"
+                android:textSize="10pt"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="A t  8 : 0 0  P M "
+                android:drawableRight="@drawable/ic_gaming"
+                android:drawableLeft="@drawable/ic_gaming"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                style="@style/cursive_tx"
+                android:textSize="10pt"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/ad1"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10pt"
+        />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
